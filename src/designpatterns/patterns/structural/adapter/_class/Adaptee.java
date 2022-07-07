@@ -1,4 +1,4 @@
-package designpatterns.patterns.structural._object.adapter;
+package designpatterns.patterns.structural.adapter._class;
 
 import java.util.List;
 
