@@ -3,7 +3,7 @@ package designpatterns.patterns.structural.composite._object.uniformity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Composite extends Component {
+public class Composite implements Component {
     private final List<Component> components = new ArrayList<>();
 
     @Override

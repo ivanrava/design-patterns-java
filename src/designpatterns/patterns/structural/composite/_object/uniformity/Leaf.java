@@ -2,7 +2,7 @@ package designpatterns.patterns.structural.composite._object.uniformity;
 
 import java.util.List;
 
-public class Leaf extends Component {
+public class Leaf implements Component {
     private final int value;
 
     public Leaf(int value) {

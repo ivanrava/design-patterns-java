@@ -2,12 +2,12 @@ package designpatterns.patterns.structural.composite._object.uniformity;
 
 import java.util.List;
 
-public abstract class Component {
-    public abstract int calculate();
+public interface Component {
+    int calculate();
 
-    public abstract void add(Component component);
+    void add(Component component);
 
-    public abstract void remove(Component component);
+    void remove(Component component);
 
-    public abstract List<Component> getChildren();
+    List<Component> getChildren();
 }
