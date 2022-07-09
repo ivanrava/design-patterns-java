@@ -3,9 +3,13 @@ package designpatterns.patterns.behavioral.observer._object;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Subject {
+public class Publisher {
     List<Observer> observers = new ArrayList<>();
-    State state = new State();
+    protected State state = new State();
+
+    public void modifyValue() {
+        notifySubscribers();
+    }
 
     public void attach(Observer s) {
         observers.add(s);
@@ -17,10 +21,5 @@ public class Subject {
 
     protected void notifySubscribers() {
         observers.forEach(observer -> observer.update(state));
-    }
-
-    public void modifyValue() {
-        state.setValue(42);
-        notifySubscribers();
     }
 }
