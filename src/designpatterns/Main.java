@@ -1,11 +1,10 @@
 package designpatterns;
 
-import designpatterns.patterns.behavioral.observer._object.ObserverRunner;
-import designpatterns.patterns.creational.simplefactory._object.SimpleFactoryRunner;
+import designpatterns.patterns.structural.composite._object.typesafety.CompositeTypeSafetyRunner;
 
 public class Main {
     public static void main(String[] args) {
-        Runnable designPatternRunner = new ObserverRunner();
+        Runnable designPatternRunner = new CompositeTypeSafetyRunner();
         designPatternRunner.run();
     }
 }
