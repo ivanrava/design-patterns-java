@@ -2,10 +2,10 @@ package designpatterns.patterns.structural.adapter._object;
 
 import java.util.Arrays;
 
-public class Adapter implements Target {
+public class SortListAdapter implements ISortAdapter {
     @Override
     public Integer[] sort(Integer[] numbers) {
-        Adaptee listSorter = new Adaptee();
+        ListSorter listSorter = new ListSorter();
         return listSorter.sort(Arrays.asList(numbers)).toArray(new Integer[0]);
     }
 }
